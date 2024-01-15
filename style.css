@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: rgba(245, 148, 39, 0.8);
+}
+
+.todoLogo{
+    display: flex;
+    align-items: center;
+}
+
+.todoLogo > h1{
+    color: white;
+    font-size: 35px;
+}
+
+section{
+    display: flex;
+}
+
+.leftSide{
+    width: 25vw;
+    height: calc(100vh - 80px);
+    background-color: rgb(240, 240, 240);
+    border-right: solid 3px rgb(230, 230, 240);
+}
+
+.leftSide > ul{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 3vh;
+    padding: 0;
+}
+
+.leftSide > ul > li{
+    list-style: none;
+    font-weight: 600;
+    font-size: 23px;
+    margin-bottom: 3vh;
+}
+
+.leftSide > ul > li:hover{
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.addBtn{
+    background-color: rgba(245, 148, 39, 0.8);
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 31px;
+    height: 70px;
+    width: 70px;
+    margin-left: 3vw;
+    margin-bottom: 4vh;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.addBtn:hover{
+    background-color: rgba(237, 140, 31, 0.8);
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 39px;
+    height: 70px;
+    width: 70px;
+    margin-left: 3vw;
+    margin-bottom: 4vh;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.rightSide{
+    width: 75vw;
+}
+
+.item{
+    display: flex;
+    background-color: rgb(235, 235, 235);
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 3vw;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.itemDetails{
+    background-color: rgb(245, 245, 245);
+    border: 2px solid rgba(109, 78, 21, 0.8);
+    border-radius: 5px;
+    color: rgba(109, 78, 21, 0.8);;
+}
+
+.itemDetails:hover{
+    background-color: rgba(109, 78, 21, 0.8);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.itemBtn{    
+    background-color: rgb(245, 245, 245);
+    border: none;
+}
