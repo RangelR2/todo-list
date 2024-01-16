@@ -29,20 +29,32 @@
             <div id="overlay" class="overlay">
                 <div id="Centralizada" class="centralizada">
                     <form id="formItem">
-                        <input id='inputTitle' type="text" placeholder="Title"></input>
+                        <input id='inputTitle' type="text" placeholder="Title" maxlength="20" required="true"></input>
                         <input id='inputDate' type="date" placeholder="Date"></input><br>
                         <input id='inputDescription' type="text" placeholder="Description"></input>
                     </form>
                     <button id="cancelButton" onclick="cancelBtn()">Cancel</button>
+                    <button id="submitButton" onclick="submitBtn()">Submit</button>
                 </div>
             </div>
-            <div class="item">
-                <input class="itemCheckbox" type="checkbox">
-                <p>Title</p>
-                <p>01/01/01</p>
-                <button class="itemDetails">Details</button>
+            <div id="overlayDetails" class="overlayDetails">
+                <div id="centralizadaDetails" class="centralizadaDetails">               
+                    <form id="formItemDetails">
+                        <input id='inputTitle' type="text" placeholder="Title" maxlength="20" required="true"></input>
+                        <input id='inputDate' type="date" placeholder="Date"></input><br>
+                        <input id='inputDescription' type="text" placeholder="Description"></input>
+                    </form>
+                    <button id="cancelButton" onclick="cancelBtn()">Cancel</button>
+                    <button id="submitButton" onclick="submitBtn()">Submit</button>
+                </div>
+            </div>
+            <div  id="item" class="item">
+                <input id="itemCheckbox" class="itemCheckbox" type="checkbox">
+                <p class="itemP">Title</p>
+                <p class="itemP">01/01/01</p>
+                <button onclick="detailsBtn()" class="itemDetails">Details</button>
                 <button class="itemBtn"><img src="edit.png" alt="edit" width="24px" height="24px"></button>
-                <button class="itemBtn"><img src="trash.png" alt="Delete" width="24px" height="24px"></button>
+                <button onclick="deleteBtn()" class="itemBtn"><img src="trash.png" alt="Delete" width="24px" height="24px"></button>
             </div>
         </div>
     </section>
