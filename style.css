@@ -149,6 +149,7 @@ section{
 
 
 #formItem{
+    display: none;
 }
 
 #formItemDepois{
@@ -157,8 +158,42 @@ section{
     background-color: greenyellow;
 }
 
-#inputDescription{
+#inputTitle{
+    margin-bottom: 1vh;
     border-radius: 5px;
+    border: 1px solid gray
+}
+
+#inputDate{
+    margin-bottom: 2vh;
+    border-radius: 5px;
+    border: 1px solid gray
+}
+
+#inputDescription{
+    width: 25vw;
+    height: 15vh;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+    border: 1px solid gray
+}
+
+#cancelButton{
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+#cancelButton:hover{
+    background-color: red;
+    border: 2px solid red;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 #overlay{

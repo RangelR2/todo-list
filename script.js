@@ -10,6 +10,7 @@ class list {
 
 function addBtn(){
     document.getElementById('overlay').style.display = 'flex';
+    document.getElementById('formItem').style.display = 'block';
 }
 
 function cancelBtn(){
