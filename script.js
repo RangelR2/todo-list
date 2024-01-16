@@ -1,13 +1,18 @@
 class list {
     constructor(){
-        this.title
-        this.description
-        this.dueDate
-        this.priority
         this.checklist
+        this.title
+        this.dueDate
+        this.description
+        this.priority
     }
 }
 
 function addBtn(){
-    alert('teste')
+    document.getElementById('overlay').style.display = 'flex';
+}
+
+function cancelBtn(){
+    document.getElementById('overlay').style.display = 'none';
+    
 }

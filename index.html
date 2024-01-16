@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body> 
+
+<body>
     <header>
         <div class="todoLogo">
             <img src="todo.png" alt="Logo" width="80px" height="80px">
             <h1>To-Do List</h1>
         </div>
     </header>
-    <section>
+    <section id="section">
         <div class="leftSide">
             <ul>
                 <li>Home</li>
@@ -23,7 +25,17 @@
             </ul>
             <button class="addBtn" id="addBtn" onclick="addBtn()">+</button>
         </div>
-        <div class="rightSide">
+        <div id="rightSide" class="rightSide">
+            <div id="overlay" class="overlay">
+                <div id="Centralizada" class="centralizada">
+                    <form id="formItem">
+                        <input id='inputDescription' type="text" placeholder="Title"></input>
+                        <input id='inputDescription' type="date" placeholder="Date"></input>
+                        <input id='inputDescription' type="text" placeholder="Description"></input>
+                    </form>
+                    <button id="cancelButton" onclick="cancelBtn()">Cancel</button>
+                </div>
+            </div>
             <div class="item">
                 <input class="itemCheckbox" type="checkbox">
                 <p>Title</p>
@@ -36,4 +48,5 @@
     </section>
     <script src="script.js"></script>
 </body>
+
 </html>
