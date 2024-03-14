@@ -178,8 +178,6 @@ section{
     background-color: blue;
 }
 
-
-
 #formItem{
     display: none;
 }
@@ -285,7 +283,18 @@ section{
     display: block;
 }
 
-#overlayDetails{
+#formItemDetails{
+    display: none;
+}
+
+#centralizadaDetails{  
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: block;
+}
+
+.detailsInfo{
     display: none;
     position: fixed;
     top: 0;
@@ -296,16 +305,4 @@ section{
     backdrop-filter: blur(10px);
     justify-content: center;
     align-items: center;
-
-}
-
-#formItemDetails{
-    display: none;
-}
-
-#centralizadaDetails{  
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    display: block;
 }
